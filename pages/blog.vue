@@ -4,9 +4,6 @@
       <h1 class="title">
         BLOG
       </h1>
-      <h2 class="subtitle">
-        Les derniers billets de blog
-      </h2>
       <posts :posts="posts"/>
     </div>
   </section>
@@ -26,7 +23,6 @@ export default {
   created () {
     content.getPosts().then((result) => {
       this.posts = result.items
-      console.log(this.posts)
     })
   },
   components: {

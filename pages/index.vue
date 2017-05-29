@@ -9,7 +9,7 @@
         PHP, VUE.JS, REACT, ANGULARJS
       </h2>
       <div class="links">
-        <a href="/creation-de-site-web" target="_blank" class="button--green">Création de site web</a>
+        <a href="/creation-de-site-internet" target="_blank" class="button--green">Création de site web</a>
         <a href="/expertise" target="_blank" class="button--grey">Expertise</a>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <section class="posts">
-    <div v-for="post in posts" class="post-teaser">
+    <div v-for="post in posts" class="post--teaser">
       <h2 class="subtitle">
         {{post.fields.title}}
       </h2>
