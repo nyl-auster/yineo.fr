@@ -10,13 +10,15 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/bulma.css' },
+      { rel: 'stylesheet', type: 'text/css', href: '/css/main.css' }
     ]
   },
   css: [
-    // Load a node.js module
-    'bulma/css/bulma.css',
-    '~assets/css/main.css',
+    //  Load a node.js module
+    //  'bulma/css/bulma.css',
+    //  '~assets/css/main.css',
   ],
   /*
   ** Customize the progress-bar color

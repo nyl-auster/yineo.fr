@@ -11,7 +11,7 @@
         <nuxt-link to="/expertise">Mission d'expertise</nuxt-link>
       </div>
       <div class="column">
-        <nuxt-link to="/blog">Blog</nuxt-link>
+        <nuxt-link to="/posts">Blog</nuxt-link>
       </div>
     </div>
   </nav>

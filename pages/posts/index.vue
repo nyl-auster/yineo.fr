@@ -11,19 +11,14 @@
 
 
 <script>
+
 import content from '~/services/content'
 import Posts from '~components/Posts.vue'
 
 export default {
-  data () {
-    return {
-      posts: []
-    }
-  },
-  created () {
-    content.getPosts().then((result) => {
-      this.posts = result.items
-    })
+  async asyncData () {
+    const result = await content.getPosts()
+    return { posts: result.items }
   },
   components: {
     Posts
