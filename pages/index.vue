@@ -9,8 +9,8 @@
         PHP, VUE.JS, REACT, ANGULARJS
       </h2>
       <div class="links">
-        <a href="/cv/" target="_blank" class="button--green">CV</a>
-        <a href="/blog/" target="_blank" class="button--grey">Blog</a>
+        <nuxt-link class="button--green" to="/cv/">CV</nuxt-link>
+        <nuxt-link class="button--grey" to="/posts/">Blog</nuxt-link>
       </div>
     </div>
   </section>
