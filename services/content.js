@@ -16,6 +16,10 @@ const content = {
     return client.getEntries({
       'content_type': contentTypePost
     })
+  },
+
+  getPost (id) {
+    return client.getEntry(id)
   }
 
 }
