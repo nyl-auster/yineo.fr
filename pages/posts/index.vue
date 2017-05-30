@@ -9,9 +9,7 @@
   </section>
 </template>
 
-
 <script>
-
 import content from '~/services/content'
 import Posts from '~components/Posts.vue'
 

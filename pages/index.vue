@@ -6,7 +6,7 @@
         YINEO.FR
       </h1>
       <h2 class="subtitle">
-        PHP, VUE.JS, REACT, ANGULARJS
+       VUE.JS, ANGULARJS, NODEJS, PHP, JAVASCRIPT
       </h2>
       <div class="links">
         <nuxt-link class="button--green" to="/cv/">CV</nuxt-link>

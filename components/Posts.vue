@@ -1,3 +1,4 @@
+<!-- Liste des posts de blogs -->
 <template>
   <section class="posts">
     <div v-for="post in posts" class="post">

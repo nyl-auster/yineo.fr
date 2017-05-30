@@ -1,3 +1,4 @@
+<!-- Menu du site -->
 <template>
   <nav class="menu">
     <div class="columns">
