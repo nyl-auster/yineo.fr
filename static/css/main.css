@@ -3,6 +3,7 @@
 {
   min-height: 100vh;
   display: flex;
+  max-width: 900px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -32,6 +33,14 @@
 /* ====== */
 
 .menu {
+  max-width: 900px;
+  margin:auto;
+  text-transform: uppercase;
   padding-top:20px;
+  padding-bottom:20px;
   text-align:center;
+}
+
+.content {
+  text-align:left
 }

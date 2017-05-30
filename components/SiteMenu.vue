@@ -5,10 +5,7 @@
         <nuxt-link to="/">Accueil</nuxt-link>
       </div>
       <div class="column">
-        <nuxt-link to="/creation-de-site-internet">Création de site Internet</nuxt-link>
-      </div>
-      <div class="column">
-        <nuxt-link to="/expertise">Mission d'expertise</nuxt-link>
+        <nuxt-link to="/cv/">CV</nuxt-link>
       </div>
       <div class="column">
         <nuxt-link to="/posts">Blog</nuxt-link>

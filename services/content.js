@@ -1,7 +1,6 @@
 const contentful = require('contentful')
 const SPACE_ID = '7nl88wndrixl'
 const ACCESS_TOKEN = '8c28a0513a9ca1558189b5644b65e108c9983aaee2e66a18cf335fbe512ecfc5'
-const contentTypePost = 'post'
 
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
@@ -10,16 +9,20 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN
 })
 
+// pour transformer le markdown en html
+const marked = require('marked')
+
 module.exports = {
 
   getPosts () {
-    return client.getEntries({
-      'content_type': contentTypePost
-    })
+    return client.getEntries({'content_type': 'post'})
   },
 
   getPost (id) {
-    return client.getEntry(id)
+    return client.getEntry(id).then(post => {
+      post.fields.content = marked(post.fields.content)
+      return post
+    })
   }
 
 }

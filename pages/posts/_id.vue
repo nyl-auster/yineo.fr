@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="post__title">
+      <h1 class="title is-3">
         {{post.fields.title}}
       </h1>
-      <div class="post__content">
-        {{post.fields.content}}
+      <div v-html="post.fields.content" class="content">
+
       </div>
     </div>
   </section>
