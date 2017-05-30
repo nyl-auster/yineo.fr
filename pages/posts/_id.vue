@@ -19,7 +19,6 @@ export default {
 
   async asyncData ({ params }) {
     const result = await content.getPost(params.id)
-    console.log(result)
     return { post: result }
   }
 

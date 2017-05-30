@@ -1,3 +1,23 @@
+const content = require('./services/content')
+
+/**
+ * Generate routes like ""/posts/xxxxx" so that nuxtjs can generate them
+ */
+function generateRoutes() {
+  const promises = []
+  // posts
+  promises.push(content.getPosts().then(result => {
+    let slugs = []
+    result.items.map(post => slugs.push('/posts/' + post.sys.id))
+    return slugs
+  }))
+
+  return Promise.all(promises).then(function(result) {
+    // we merge slugs arrays returned by each promise on a single big flat array
+    return [].concat.apply([], result);
+  })
+}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -41,5 +61,10 @@ module.exports = {
         })
       }
     }
+  },
+
+  generate: {
+    routes: generateRoutes
   }
+
 }

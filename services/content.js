@@ -10,7 +10,7 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN
 })
 
-const content = {
+module.exports = {
 
   getPosts () {
     return client.getEntries({
@@ -23,5 +23,3 @@ const content = {
   }
 
 }
-
-export default content
