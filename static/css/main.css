@@ -44,3 +44,7 @@
 .content {
   text-align:left
 }
+
+.posts .post {
+  padding-bottom: 40px
+}

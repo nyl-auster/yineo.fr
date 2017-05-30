@@ -1,11 +1,11 @@
 <template>
   <section class="posts">
-    <div v-for="post in posts" class="post--teaser">
+    <div v-for="post in posts" class="post">
       <h2 class="title is-3">
         {{post.fields.title}}
       </h2>
       <div class="post__readmore">
-        <nuxt-link class="button is-light" :to="{ name: 'posts-id', params: { id: post.sys.id } }"> Lire plus </nuxt-link>
+        <nuxt-link class="button is-primary" :to="{ name: 'posts-id', params: { id: post.sys.id } }"> Lire l'article </nuxt-link>
       </div>
     </div>
   </section>
