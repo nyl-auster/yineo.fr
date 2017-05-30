@@ -1,9 +1,10 @@
 import Vue from 'vue'
 const marked = require('marked')
 
+// add a markdownToHtml method on ALL vue components
 Vue.mixin({
   methods: {
-    markdown: function (input) {
+    markdownToHtml: function (input) {
       return marked(input)
     }
   }

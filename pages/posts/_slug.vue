@@ -7,7 +7,7 @@
       <div v-if="post.fields.image" class="post__image">
           <img :src="post.fields.image.fields.file.url" />
       </div>
-      <div v-html="markdown(post.fields.content)" class="content">
+      <div v-html="markdownToHtml(post.fields.content)" class="content">
 
       </div>
     </div>
