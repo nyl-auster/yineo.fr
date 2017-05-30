@@ -5,7 +5,7 @@
         {{post.fields.title}}
       </h2>
       <div class="post__readmore">
-        <nuxt-link class="button is-primary" :to="{ name: 'posts-id', params: { id: post.sys.id } }"> Lire l'article </nuxt-link>
+        <nuxt-link class="button is-primary" :to="{ name: 'posts-slug', params: { slug: post.fields.slug } }"> Lire l'article </nuxt-link>
       </div>
     </div>
   </section>

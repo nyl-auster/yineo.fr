@@ -8,7 +8,7 @@ function generateRoutes() {
   // posts
   promises.push(content.getPosts().then(result => {
     let slugs = []
-    result.items.map(post => slugs.push('/posts/' + post.sys.id))
+    result.items.map(post => slugs.push('/posts/' + post.fields.slug))
     return slugs
   }))
 
@@ -65,6 +65,10 @@ module.exports = {
 
   generate: {
     routes: generateRoutes
-  }
+  },
+
+  plugins: [
+    {src: '~plugins/vue-markdown.js'}
+  ]
 
 }

@@ -8,7 +8,7 @@
         <nuxt-link to="/cv/">CV</nuxt-link>
       </div>
       <div class="column">
-        <nuxt-link to="/posts">Blog</nuxt-link>
+        <nuxt-link to="/posts/">Blog</nuxt-link>
       </div>
     </div>
   </nav>

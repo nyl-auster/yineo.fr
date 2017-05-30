@@ -10,12 +10,32 @@ const client = contentful.createClient({
 })
 
 // pour transformer le markdown en html
+// @TODO le faire à l'affichage avec un mixin ?
 const marked = require('marked')
+const axios = require('axios')
 
 module.exports = {
 
   getPosts () {
     return client.getEntries({'content_type': 'post'})
+  },
+
+  /**
+   * @param asset : full json representing file entity
+   * example : send "result.fields.image" from a post object
+   */
+  getImage (asset) {
+    const url = 'https:' + asset.fields.file.url
+    return axios.get(url)
+  },
+
+  getPostBySlug (slug) {
+    return client.getEntries({
+      'content_type': 'post',
+      'fields.slug': slug
+    }).then(result => {
+      return result.items[0]
+    })
   },
 
   getPost (id) {
